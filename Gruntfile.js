@@ -120,7 +120,39 @@ module.exports = function(grunt) {
           { expand: true, cwd: 'dist/web', src: ['*.html','*.gz','*.py'] }
         ]
       }
+    },
+    watch: {
+      livereload: {
+        options: {
+          livereload: '<%= connect.options.livereload %>'
+        },
+        files: [
+          'src/**/*'
+        ],
+        tasks: ['build']
+      }
+    },
+    connect: {
+      options: {
+        port: 9000,
+        livereload: 35729,
+        hostname: '0.0.0.0'
+      },
+      livereload: {
+        options: {
+          open: true,
+          base: 'dist/web'
+        }
+      }
     }
+  });
+
+  grunt.registerTask('serve', function (target) {
+    grunt.task.run([
+      'build',
+      'connect:livereload',
+      'watch'
+    ]);
   });
 
   grunt.registerTask('build', [
