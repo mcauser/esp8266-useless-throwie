@@ -35,7 +35,7 @@ module.exports = function(grunt) {
       dist: {
         files: {
           'build/web/main.js': 'src/web/main.js',
-          'build/web/index.html': 'src/web/index.html'
+          'build/web/useless_throwie.html': 'src/web/useless_throwie.html'
         },
         options: {
           replacements: [{
@@ -80,7 +80,7 @@ module.exports = function(grunt) {
       },
       dist: {
         files: {
-          'build/web/index.html': 'build/web/index.html'
+          'build/web/useless_throwie.html': 'build/web/useless_throwie.html'
         }
       }
     },
@@ -91,8 +91,8 @@ module.exports = function(grunt) {
           collapseWhitespace: true
         },
         files: {
-          'dist/web/index.min.html': 'build/web/index.html',
-          'dist/web/hello.min.html': 'src/web/hello.html'
+          'dist/web/useless_throwie.min.html': 'build/web/useless_throwie.html',
+          'dist/web/hello_world.min.html': 'src/web/hello_world.html'
         }
       }
     },
@@ -117,7 +117,7 @@ module.exports = function(grunt) {
     filesize: {
       base: {
         files: [
-          { expand: true, cwd: 'dist', src: ['*.html','*.gz','*.py'] }
+          { expand: true, cwd: 'dist/web', src: ['*.html','*.gz','*.py'] }
         ]
       }
     }

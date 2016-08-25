@@ -1,3 +1,5 @@
+# This is incomplete and only partially works
+
 try:
 	import usocket as socket
 except:

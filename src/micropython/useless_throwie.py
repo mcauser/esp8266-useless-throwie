@@ -42,7 +42,7 @@ Content-Length: %d
 """
 
     # read the gzipped html
-    f = open('index.min.html.gz','rb')
+    f = open('useless_throwie.min.html.gz','rb')
     html = f.read()
     f.close()
 

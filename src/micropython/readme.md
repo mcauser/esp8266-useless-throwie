@@ -45,7 +45,7 @@ Based on [Mini Fake DNS server](http://code.activestate.com/recipes/491264-mini-
 
 ### hello_gzip.py
 
-Simple web server that reponds with pre-gzipped html content.
+Simple web server that reponds with pre-gzipped html content `dist/web/hello_world.min.html.gz`.
 
 ### test_relay.py
 
@@ -55,7 +55,7 @@ Testing the relay and onboard LED.
 
 Simple web server that serves the html toggle switch that can flip the relay (GPIO5) and onboard LED (GPIO2) when clicked.
 
-Given the gzipped html is around 8kb, this might only work on ESP8266s with larger flash chips. Without gzip, the minified html is around 15kb.
+Given the gzipped html, `dist/web/useless_throwie.min.html.gz`, is around 8kb, this might only work on ESP8266s with larger flash chips. Without gzip, the minified html is around 15kb.
 
 ### useless_throwie_captive.py
 
