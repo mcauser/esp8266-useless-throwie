@@ -1,0 +1,46 @@
+html,
+body {
+	height: 100%;
+}
+
+body {
+	background: #342e32;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
+}
+
+.switch {
+	width: 75%;
+	max-width: 250px;
+	cursor: pointer;
+	position: relative;
+	&:not(.on) .on,
+	&.on .off {
+		display: none;
+	}
+	&:before {
+		content: '';
+		display: block;
+		position: absolute;
+		top: 16%;
+		left: 13%;
+		right: 13%;
+		bottom: 18%;
+		// background-color: rgba(255,0,0,0.5);
+		z-index: 30;
+	}
+	svg {
+		z-index: 10;
+	}
+}
+
+.finger {
+	width: 50%;
+	min-width: 400px;
+	position: absolute;
+	top: 100%;
+	left: 60%;
+	z-index: 20;
+}

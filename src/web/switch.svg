@@ -1,0 +1,105 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 466 356" xml:space="preserve">
+	<filter id="AI_GaussianBlur_12">
+		<feGaussianBlur stdDeviation="12"></feGaussianBlur>
+	</filter>
+	<!-- <filter id="AI_GaussianBlur_7">
+		<feGaussianBlur stdDeviation="7"></feGaussianBlur>
+	</filter> -->
+	<filter id="AI_GaussianBlur_4">
+		<feGaussianBlur stdDeviation="4"></feGaussianBlur>
+	</filter>
+	<linearGradient id="track_gradient" gradientUnits="userSpaceOnUse" x1="65" y1="178" x2="401" y2="178">
+		<stop offset="0" style="stop-color:#20171B"/>
+		<stop offset="0.11" style="stop-color:#383135"/>
+		<stop offset="0.22" style="stop-color:#20171B"/>
+		<stop offset="0.78" style="stop-color:#20171B"/>
+		<stop offset="0.89" style="stop-color:#383135"/>
+		<stop offset="1" style="stop-color:#20171B"/>
+	</linearGradient>
+	<linearGradient id="track_top_gradient" gradientUnits="userSpaceOnUse" x1="233" y1="63" x2="233" y2="293">
+		<stop offset="0" style="stop-color:#6D6E71"/>
+		<stop offset="0.0062" style="stop-color:#66676A"/>
+		<stop offset="0.0162" style="stop-color:#515254"/>
+		<stop offset="0.0289" style="stop-color:#101010"/>
+		<stop offset="0.03" style="stop-color:#000000"/>
+	</linearGradient>
+	<linearGradient id="rocker_outer_on" gradientUnits="userSpaceOnUse" x1="177.1182" y1="32.7124" x2="344.8818" y2="323.2876">
+		<stop offset="0" style="stop-color:#666065"/>
+		<stop offset="1" style="stop-color:#1A1819"/>
+	</linearGradient>
+	<linearGradient id="rocker_outer_off" gradientUnits="userSpaceOnUse" x1="344.8818" y1="32.7124" x2="177.1182" y2="323.2876">
+		<stop offset="0" style="stop-color:#666065"/>
+		<stop offset="1" style="stop-color:#1A1819"/>
+	</linearGradient>
+	<linearGradient id="rocker_inner_on" gradientUnits="userSpaceOnUse" x1="125" y1="178" x2="397" y2="178">
+		<stop offset="0" style="stop-color:#5B5558"/>
+		<stop offset="1" style="stop-color:#3B383F"/>
+	</linearGradient>
+	<linearGradient id="rocker_inner_off" gradientUnits="userSpaceOnUse" x1="125" y1="178" x2="397" y2="178">
+		<stop offset="0" style="stop-color:#3B383F"/>
+		<stop offset="1" style="stop-color:#5C5658"/>
+	</linearGradient>
+	<linearGradient id="face_gradient" gradientUnits="userSpaceOnUse" x1="233" y1="-8.889401e-09" x2="233" y2="356">
+		<stop offset="0" style="stop-color:#585254"/>
+		<stop offset="1" style="stop-color:#3B3539"/>
+	</linearGradient>
+	<defs>
+		<path id="stroke_blur_clip_path" d="M431,356H35c-19.33,0-35-15.67-35-35V35C0,15.67,15.67,0,35,0h396c19.33,0,35,15.67,35,35v286C466,340.33,450.33,356,431,356z"/>
+	</defs>
+	<clipPath id="stroke_blur_clip">
+		<use xlink:href="#stroke_blur_clip_path" overflow="visible"/>
+	</clipPath>
+	<linearGradient id="stroke_blur_gradient" gradientUnits="userSpaceOnUse" x1="102.7705" y1="-47.564" x2="363.2295" y2="403.564">
+		<stop offset="0" style="stop-color:#B3B3B3"/>
+		<stop offset="0.1806" style="stop-color:#B1B1B1"/>
+		<stop offset="0.2457" style="stop-color:#ABAAAB"/>
+		<stop offset="0.2921" style="stop-color:#A09F9F"/>
+		<stop offset="0.3296" style="stop-color:#908E8F"/>
+		<stop offset="0.3617" style="stop-color:#7B7879"/>
+		<stop offset="0.3896" style="stop-color:#625D60"/>
+		<stop offset="0.4" style="stop-color:#575154"/>
+		<stop offset="0.52" style="stop-color:#000000"/>
+	</linearGradient>
+	<filter id="led-glow" x="-5000%" y="-5000%" width="10000%" height="10000%">
+		<feFlood result="flood" flood-color="#52C4C8" flood-opacity="1"></feFlood>
+		<feComposite in="flood" result="mask" in2="SourceGraphic" operator="in"></feComposite>
+		<feMorphology in="mask" result="dilated" operator="dilate" radius="6"></feMorphology>
+		<feGaussianBlur in="dilated" result="blurred" stdDeviation="15"></feGaussianBlur>
+		<feMerge>
+			<feMergeNode in="blurred"></feMergeNode>
+			<feMergeNode in="SourceGraphic"></feMergeNode>
+		</feMerge>
+	</filter>
+	<g>
+		<path id="face" display="inline" fill="url(#face_gradient)" d="M431,356H35c-19.33,0-35-15.67-35-35V35C0,15.67,15.67,0,35,0h396c19.33,0,35,15.67,35,35v286C466,340.33,450.33,356,431,356z"/>
+		<path id="stroke_blur" display="inline" clip-path="url(#stroke_blur_clip)" fill="url(#stroke_blur_gradient)" filter="url(#AI_GaussianBlur_4)" d="M432.7-2H33.3C13.805-2-2,13.846-2,33.393v289.214C-2,342.154,13.805,358,33.3,358H432.7c19.496,0,35.3-15.846,35.3-35.393V33.393C468,13.846,452.195-2,432.7-2z M455.897,322.607c0,12.825-10.406,23.258-23.197,23.258H33.3c-12.791,0-23.197-10.433-23.197-23.258V33.393c0-12.825,10.406-23.258,23.197-23.258H432.7c12.791,0,23.197,10.434,23.197,23.258V322.607z"/>
+		<path id="hole" d="M397,302H69c-8.284,0-15-6.716-15-15V69c0-8.284,6.716-15,15-15h328c8.284,0,15,6.716,15,15v218C412,295.284,405.284,302,397,302z"/>
+
+		<g id="on-shadow" class="on" transform="translate(93 85) rotate(-10 140 111)">
+			<g id="shadow-10deg-blur7" filter="url(#AI_GaussianBlur_12)">
+				<rect x="0" y="0" display="inline" width="280" height="222"/>
+			</g>
+		</g>
+
+		<g id="off-shadow" class="off" transform="translate(93 82) rotate(10 140 111)">
+			<g id="shadow-10deg-blur7" filter="url(#AI_GaussianBlur_12)">
+				<rect x="0" y="0" display="inline" width="280" height="222"/>
+			</g>
+		</g>
+
+		<path id="track-sides" display="inline" fill="url(#track_gradient)" d="M396,293H70c-2.761,0-5-2.239-5-5V68c0-2.761,2.239-5,5-5h326c2.761,0,5,2.239,5,5v220C401,290.761,398.761,293,396,293z"/>
+		<path id="track-top" display="inline" opacity="0.2" fill="url(#track_top_gradient)" d="M396,293H70c-2.761,0-5-2.239-5-5V68c0-2.761,2.239-5,5-5h326c2.761,0,5,2.239,5,5v220C401,290.761,398.761,293,396,293z"/>
+
+		<!-- possibly use a single button and set filter with css -->
+		<g id="on-button" class="on">
+			<path id="rocker_outer" display="inline" fill="url(#rocker_outer_on)" d="M396,293H126c-2.761,0-5-2.239-5-5V68c0-2.761,2.239-5,5-5h270c2.761,0,5,2.239,5,5v220C401,290.761,398.761,293,396,293z"/>
+			<rect id="rocker_inner" x="125" y="67" display="inline" fill="url(#rocker_inner_on)" width="272" height="222"/>
+			<rect id="led-on" x="341" y="125.5" fill="#52C4C8" width="26" height="105" filter="url(#led-glow)"/>
+		</g>
+		<g id="off-button" class="off">
+			<path transform="translate(-56 0)" id="rocker_outer" display="inline" fill="url(#rocker_outer_off)" d="M396,293H126c-2.761,0-5-2.239-5-5V68c0-2.761,2.239-5,5-5h270c2.761,0,5,2.239,5,5v220C401,290.761,398.761,293,396,293z"/>
+			<rect transform="translate(-56 0)" id="rocker_inner" x="125" y="67" display="inline" fill="url(#rocker_inner_off)" width="272" height="222"/>
+			<rect id="led-off" x="288" y="125.5" fill="#073233" width="26" height="105"/>
+		</g>
+	</g>
+</svg>
