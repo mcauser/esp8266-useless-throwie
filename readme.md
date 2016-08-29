@@ -86,10 +86,10 @@ Further instructions for configuring each device.
 
 ### Common:
 
-- [ ] add photos
+- [x] add photos
 - [ ] grunt add concurrent
-- [ ] grunt add open
-- [ ] grunt add connect, watch, livereload
+- [x] grunt add open
+- [x] grunt add connect, watch, livereload
 - [ ] MQTT publish
 - [ ] swap relay for OLED, char LCD, buzzer, LED, WS2818, etc
 
