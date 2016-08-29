@@ -107,3 +107,4 @@ Further instructions for configuring each device.
 
 * MicroPython socket web server examples based on [MicroPython examples](https://github.com/micropython/micropython/tree/master/examples/network).
 * Python captive portal code based on [Mini Fake DNS server](http://code.activestate.com/recipes/491264-mini-fake-dns-server/).
+* [easings.net](http://easings.net/) for the CSS Bezier curves
