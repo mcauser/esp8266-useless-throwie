@@ -4,6 +4,8 @@ An ESP8266 configured as an access point with a tiny web server which serves a p
 
 ![Demo](https://raw.github.com/mcauser/esp8266-useless-throwie/master/demo.png)
 
+Precompiled [demo.html](https://raw.githubusercontent.com/mcauser/esp8266-useless-throwie/master/demo.html) - just the button, finger and audio only.
+
 ## Install:
 
 Install [node.js](http://nodejs.org) 5.12.0 or later.
