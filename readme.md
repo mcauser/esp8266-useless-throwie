@@ -93,6 +93,16 @@ Further instructions for configuring each device.
 - [ ] MQTT publish
 - [ ] swap relay for OLED, char LCD, buzzer, LED, WS2818, etc
 
+## Links:
+
+* [demo](https://mcauser.github.io/esp8266-useless-throwie/index.html)
+* [WeMos D1 Mini](http://www.wemos.cc/Products/d1_mini.html)
+* [WeMos D1 Mini Relay Shield](http://www.wemos.cc/Products/relay_shield.html)
+* [micropython.org](http://micropython.org)
+* [node.js](http://nodejs.org)
+* [grunt](http://gruntjs.com/)
+* [hackaday project](https://hackaday.io/project/13322-esp8266-useless-throwie)
+
 ## Credits:
 
 * MicroPython socket web server examples based on [MicroPython examples](https://github.com/micropython/micropython/tree/master/examples/network).
